@@ -12,6 +12,7 @@ class knn:
         self.trainseq = []
         self.testset = []
         self.testseq = []
+        self.max_dist = 0
 
     def setosaSet(self):
         with open(self.dataset,'rb') as csvfile:
@@ -71,6 +72,8 @@ class knn:
         for x in range(len(trainingSet)):
             dist = self.euclideanDistance(testInstance, trainingSet[x])
             distances.append((trainingSet[x], dist))
+            if dist > self.max_dist:
+                self.max_dist = dist
         distances.sort(key=operator.itemgetter(1))
         neighbors = []
         for x in range(k):
