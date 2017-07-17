@@ -18,6 +18,7 @@ if __name__=="__main__":
         print neighbors[0][0], 'with a distance of ', neighbors[0][1]
         print 'The type of test data %s is:' %str(item), neighbors[0][0][-1], '\n'
 
+    print 'Max distance:', A.max_dist
     print '************************************************************************', '\n'
     print 'Step 2:'
-    print 
+    print
