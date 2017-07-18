@@ -26,7 +26,7 @@ if __name__=="__main__":
     print test2set,'\n'
 
     for item in test2set:
-        neighbors = A.getNeighbors(train_set, item)
+        neighbors = A.getNeighbors(train_set, item, 'P2')
         if neighbors[0][1] > A.max_dist:
             iris_type = 'Versicolor'
         else:
@@ -39,7 +39,7 @@ if __name__=="__main__":
     print '\nRandom picked 5 versicolor test set'
     print ver_test_set,'\n'
     for item in ver_test_set:
-        neighbors = A.getNeighbors(train_set, item)
+        neighbors = A.getNeighbors(train_set, item, 'P2')
         if float(neighbors[0][1]) > float(A.max_dist):
             iris_type = 'Versicolor'
         else:
