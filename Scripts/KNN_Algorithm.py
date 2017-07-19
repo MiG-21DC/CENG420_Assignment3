@@ -5,7 +5,7 @@ import operator
 
 
 class knn:
-    def __init__(self, dataset):
+    def __init__(self, dataset='iris.csv'):
         self.dataset = dataset
         self.setosa = []
         self.trainset = []
