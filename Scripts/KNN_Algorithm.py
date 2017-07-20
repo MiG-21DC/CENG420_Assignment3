@@ -126,8 +126,6 @@ class knn:
     def getNeighbors(self, trainingSet, testInstance, q='P1',k=1):
         distances = []
         for x in range(len(trainingSet)):
-            print testInstance
-            print trainingSet[x]
             dist = self.euclideanDistance(testInstance, trainingSet[x])
             distances.append((trainingSet[x], dist))
             if q == 'P1':
