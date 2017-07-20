@@ -24,6 +24,7 @@ class knn:
         with open(self.dataset,'rb') as csvfile:
             line = csvfile.readline()
             while line != '':
+                print line
                 line.replace('\n', '')
                 elements = line.split(',')
                 elements[4] = elements[4].split('\r\n')[0]
