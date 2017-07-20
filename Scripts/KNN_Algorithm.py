@@ -119,8 +119,6 @@ class knn:
     def euclideanDistance(self, instance1, instance2, length = 4):
         distance = 0
         for x in range(length):
-            print instance1
-            print instance2
             distance += pow((float(instance1[x]) - float(instance2[x])), 2)
         return math.sqrt(distance)
 
@@ -128,6 +126,8 @@ class knn:
     def getNeighbors(self, trainingSet, testInstance, q='P1',k=1):
         distances = []
         for x in range(len(trainingSet)):
+            print testInstance
+            print trainingSet[x]
             dist = self.euclideanDistance(testInstance, trainingSet[x])
             distances.append((trainingSet[x], dist))
             if q == 'P1':
