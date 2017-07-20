@@ -43,6 +43,7 @@ class knn:
                 line.replace('\n', '')
                 elements = line.split(',')
                 elements[4] = elements[4].split('\r\n')[0]
+                elements[4] = elements[4].split('\n')[0]
                 if elements[4] == 'Iris-versicolor':
                     self.versicolor.append(elements)
                 line = csvfile.readline()
