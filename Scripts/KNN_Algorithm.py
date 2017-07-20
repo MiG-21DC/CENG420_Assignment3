@@ -23,12 +23,12 @@ class knn:
     def setosaSet(self):
         with open(self.dataset,'rb') as csvfile:
             line = csvfile.readline()
-            print line
             while line != '':
                 line.replace('\n', '')
                 elements = line.split(',')
                 elements[4] = elements[4].split('\r\n')[0]
                 if elements[4] == 'Iris-setosa':
+                    print elements
                     self.setosa.append(elements)
                 line = csvfile.readline()
 
