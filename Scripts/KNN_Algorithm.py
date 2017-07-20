@@ -28,6 +28,7 @@ class knn:
                 line.replace('\n', '')
                 elements = line.split(',')
                 elements[4] = elements[4].split('\r\n')[0]
+                elements[4] = elements[4].split('\n')[0]
                 print elements[4]
                 if elements[4] == 'Iris-setosa':
                     print elements
