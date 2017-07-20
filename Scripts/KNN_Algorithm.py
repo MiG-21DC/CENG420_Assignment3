@@ -119,8 +119,8 @@ class knn:
     def euclideanDistance(self, instance1, instance2, length = 4):
         distance = 0
         for x in range(length):
-            print instance1[x]
-            print instance2[x]
+            print instance1
+            print instance2
             distance += pow((float(instance1[x]) - float(instance2[x])), 2)
         return math.sqrt(distance)
 
