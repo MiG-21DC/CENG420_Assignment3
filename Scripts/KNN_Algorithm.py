@@ -51,6 +51,7 @@ class knn:
         set_size = len(self.setosa)
         sequence = []
         train_data = []
+        print self.setosa
         if set_size == 0 or set_size < num:
             return 'Setosa set defined error. Reload the program and try again.'
         for i in range(num):
