@@ -11,13 +11,21 @@ Yangguang Liu   V00782918
 
 Please run the code with Python 2.7
 
-#version v1.1
+version v1.1
+
+
     Fixed error display \n under linux console
 
-#1.  Unzip program package or clone from GitHub
+
+1.  Unzip program package or clone from GitHub
+
+
     git clone https://github.com/MiG-21DC/CENG420_Assignment3.git
 
-#2.  Run the main program
+
+2.  Run the main program
+
+
     cd Scripts
 
 
